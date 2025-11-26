@@ -4213,3 +4213,14 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
+
+/* Hide .sectionTabs */
+.SectionTabs {
+    display: none !important;
+}
+
+/* Hide Card text for some sections */
+div:not(#castContent) > :is(.portraitCard, .overflowPortraitCard, .overflowBackdropCard) > .cardBox > :is(.cardText-first, .cardText-secondary) {
+  display: none;
+}

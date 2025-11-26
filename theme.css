@@ -418,9 +418,9 @@ a.overview-expand.emby-button {
 }
 
 /* hide imdb, tmdb trakt links */
-.itemExternalLinks {
-    display: none;
-}
+/*.itemExternalLinks {*/
+/*    display: none;*/
+/*}*/
 
 /* makes it so 5 lines are show in description before show more is shown */
 .detail-clamp-text {

@@ -29,7 +29,7 @@ Two login wallpaper options: Minimal and Stylish.
 To add the theme to Jellyfin `v10.11+`, copy the following line to Dashboard > Branding² > Custom CSS:
 
 ```
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/theme.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/theme.css');
 ```
 
 <br>
@@ -40,7 +40,7 @@ To add the theme to Jellyfin `v10.11+`, copy the following line to Dashboard > B
 Jellyfin `v10.10.x`:
 <br>
 ```
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@legacy/v10.10/theme.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@legacy/v10.10/theme.css');
 ```
 </details>
 
@@ -69,7 +69,7 @@ The default color scheme.
 <img src="./images/colorschemes/blue.png" alt="blue" width="30%"/>
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/blue.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/colorschemes/blue.css');
 ```
 
 <details>
@@ -86,7 +86,7 @@ The default color scheme.
 <img src="./images/colorschemes/coral.png" alt="coral" width="30%"/>
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/coral.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/colorschemes/coral.css');
 ```
 
 <details>
@@ -103,7 +103,7 @@ The default color scheme.
 <img src="./images/colorschemes/gray.png" alt="gray" width="30%"/>
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/gray.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/colorschemes/gray.css');
 ```
 
 <details>
@@ -120,7 +120,7 @@ The default color scheme.
 <img src="./images/colorschemes/green.png" alt="green" width="30%"/>
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/green.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/colorschemes/green.css');
 ```
 
 <details>
@@ -137,7 +137,7 @@ The default color scheme.
 <img src="./images/colorschemes/purple.png" alt="purple" width="30%"/>
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/purple.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/colorschemes/purple.css');
 ```
 
 <details>
@@ -154,7 +154,7 @@ The default color scheme.
 <img src="./images/colorschemes/red.png" alt="red" width="30%"/>
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/red.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/colorschemes/red.css');
 ```
 
 <details>
@@ -171,7 +171,7 @@ The default color scheme.
 <img src="./images/colorschemes/yellow.png" alt="yellow" width="30%"/>
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/yellow.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/colorschemes/yellow.css');
 ```
 
 <details>
@@ -190,7 +190,7 @@ For more info on custom colors [click here](./colorschemes/COLORS.md). For more 
 Finally, _if_ you would like to use the alternative(stylish) login wallpaper, add the line below to your Custom CSS as well:
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/login-alt.css');
+@import url('https://cdn.jsdelivr.net/gh/ToniCifre/ZestyTheme@latest/login-alt.css');
 ```
 
 This is a comparison between the minimal(default) and stylish versions of the login wallpaper:
@@ -308,3 +308,16 @@ This is a comparison between the minimal(default) and stylish versions of the lo
  Make it so there is no "overflowing" entries in Genres after I increased Poster size
 
 <img src="./images/genres.jpg" alt="genres" width="65%"/>
+
+
+## Update upstream repo
+
+To update the theme to the latest version of the upstream Ultrachromic repo, run the following commands in your terminal:
+
+```bash
+git remote add upstream https://github.com/ToniCifre/ZestyTheme.git
+git fetch upstream
+git checkout main
+git rebase upstream/main
+git push origin main --force
+```

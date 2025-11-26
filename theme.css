@@ -25,7 +25,7 @@ h4 {
 
 /*Style backdrop*/
 .backdropImage {
-    filter: blur(6px) saturate(120%) contrast(120%) brightness(40%);
+    filter: saturate(120%) contrast(120%) brightness(40%);
 }
 .card.show-animation:focus > .cardBox {
     -webkit-transform: scale(1.1);
@@ -3948,7 +3948,7 @@ imgLogoIcon {
 
 /* TV Stuff */
 .layout-tv .backdropImage {
-    filter: blur(16px) saturate(120%) contrast(120%) brightness(40%);
+    filter: saturate(120%) contrast(120%) brightness(40%);
 }
 
 .layout-tv {

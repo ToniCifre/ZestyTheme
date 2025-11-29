@@ -1567,10 +1567,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     box-shadow: -1px 1px 5px 1px rgba(var(--darkest), 0.5);
 }
 .countIndicator {
-    background: rgba(var(--accent), 1);
+    background: rgba(var(--accent), 0.7);
 }
 .playedIndicator {
-    background: rgba(var(--darkest), 1);
+    background: rgba(var(--darkest), 0.7);
 }
 .cardIndicators {
     position: static;
@@ -1578,7 +1578,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 .countIndicator,
 .playedIndicator {
-    background: rgba(var(--accent), 1) !important;
+    background: rgba(var(--accent), 0.7) !important;
     color: rgba(var(--darkest), 1) !important;
     font-weight: bold;
     position: absolute;

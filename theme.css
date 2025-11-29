@@ -4224,3 +4224,12 @@ imgLogoIcon {
 div:not(#castContent) > :is(.portraitCard, .overflowPortraitCard, .overflowBackdropCard) > .cardBox > :is(.cardText-first, .cardText-secondary) {
   display: none;
 }
+
+/* Hide play arrow on large list items until hover */
+.listItem-content div.listItemImage-large .play_arrow {
+  display: none;
+}
+
+.listItem-content:hover div.listItemImage-large .play_arrow {
+  display: block;
+}
